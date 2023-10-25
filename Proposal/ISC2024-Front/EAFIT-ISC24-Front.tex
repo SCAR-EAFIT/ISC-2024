@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, total={7.5in, 9.5in}]{geometry}
+
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{titling}
+\usepackage[dvipsnames]{xcolor}
+
+
+
+\pretitle{ \centering \LARGE  \noindent\includegraphics[width = .5\linewidth]{logo.png}\\[\bigskipamount] }
+\posttitle{}
+\definecolor{bluePoli}{RGB}{38, 61, 137}
+\newcommand{\nameentry}[3]{
+\textcolor{bluePoli}{\textbf{#1}} \\ #2 \\ \textit{#3} \\
+}
+
+\newcommand{\groupname}{EAFIT University \\ Apolo Scientific Computing Center \\ Medellín, Colombia \bigskip\bigskip \\ \textbf{Proposal for ISC22 SCC Virtual Competition}}
+
+\author{
+    \begin{tabular}{c}
+    \nameentry{Vincent A. Arcila}{Team Leader/CS Student}{vaarcilal@eafit.edu.co}
+    \\
+    \nameentry{Manuela Herrera-López}{CS Student}{mherreral@eafit.edu.co}
+    \\
+    \nameentry{Isabel Piedrahíta-Vélez}{CS Student}{ipiedrahiv@eafit.edu.co}
+    \\
+    \nameentry{Juan G. Lalinde}{Advisor/CS Professor}{jlalinde@eafit.edu.co}
+    \\
+    \end{tabular}
+    \and
+    \begin{tabular}{c}
+    \nameentry{Samuel D. Palacios}{CS Student}{sdpalaciob@eafit.edu.co}
+    \\
+    \nameentry{Santiago Gil-Zapata}{CS Student}{sgilz@eafit.edu.co}
+    \\
+    \nameentry{Juan P. Ossa}{Engineering Mathematics Student}{jpossaz@eafit.edu.co}
+    \\
+    \nameentry{Juan D. Pineda}{Advisor/Infraestructure Engineer at Pyxis}{jpineda2@eafit.edu.co}
+    \\
+    %\nameentry{Member Three}{Biology}{zid@unsw.edu.au}
+    \end{tabular}
+}
+
+\date{\vspace{\bigskipamount}\today}
+
+
+\setlength{\headheight}{15pt}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\groupname}
+\lhead{\shorttitle}
+\cfoot{\thepage}
+
+\title{\groupname\\\large \longtitle\  \shorttitle\\}
+
+
+\begin{document}
+
+
+\pagenumbering{Alph}
+
+\begin{titlingpage}
+    \centering \maketitle
+\end{titlingpage}
+
+
+\end{document}

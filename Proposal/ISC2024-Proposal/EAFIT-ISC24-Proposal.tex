@@ -1,0 +1,229 @@
+% A LaTeX template for EXECUTIVE SUMMARY of the MSc Thesis submissions to 
+% Politecnico di Milano (PoliMi) - School of Industrial and Information Engineering
+%
+% S. Bonetti, A. Gruttadauria, G. Mescolini, A. Zingaro
+% e-mail: template-tesi-ingind@polimi.it
+%
+% Last Revision: October 2021
+%
+% Copyright 2021 Politecnico di Milano, Italy. NC-BY
+
+\documentclass[11pt,a4paper,twocolumn]{article}
+\usepackage{wrapfig}
+
+%------------------------------------------------------------------------------
+%	REQUIRED PACKAGES AND  CONFIGURATIONS
+%------------------------------------------------------------------------------
+% PACKAGES FOR TITLES
+\usepackage{titlesec}
+\usepackage{color}
+
+% PACKAGES FOR LANGUAGE AND FONT
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc} % Font encoding
+
+% PACKAGES FOR IMAGES
+\usepackage{graphicx}
+\graphicspath{{Images/}} % Path for images' folder
+\usepackage{eso-pic} % For the background picture on the title page
+\usepackage{subfig} % Numbered and caption subfigures using \subfloat
+\usepackage{caption} % Coloured captions
+\usepackage{transparent}
+\usepackage{wrapfig}
+
+
+% STANDARD MATH PACKAGES
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{bm}
+\usepackage[overload]{empheq}  % For braced-style systems of equations
+
+% PACKAGES FOR TABLES
+\usepackage{tabularx}
+\usepackage{longtable} % tables that can span several pages
+\usepackage{colortbl}
+
+% PACKAGES FOR ALGORITHMS (PSEUDO-CODE)
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+% PACKAGES FOR REFERENCES & BIBLIOGRAPHY
+\usepackage[colorlinks=true,linkcolor=black,anchorcolor=black,citecolor=black,filecolor=black,menucolor=black,runcolor=black,urlcolor=black]{hyperref} % Adds clickable links at references
+\usepackage{cleveref}
+\usepackage[square, numbers, sort&compress]{natbib} % Square brackets, citing references with numbers, citations sorted by appearance in the text and compressed
+\bibliographystyle{plain} % You may use a different style adapted to your field
+
+% PACKAGES FOR THE APPENDIX
+\usepackage{appendix}
+
+% PACKAGES FOR ITEMIZE & ENUMERATES 
+\usepackage{enumitem}
+
+
+% OTHER PACKAGES
+\usepackage{amsthm,thmtools,xcolor} % Coloured "Theorem"
+\usepackage{comment} % Comment part of code
+\usepackage{fancyhdr} % Fancy headers and footers
+\usepackage{lipsum} % Insert dummy text
+\usepackage{tcolorbox} % Create coloured boxes (e.g. the one for the key-words)
+\usepackage{stfloats} % Correct position of the tables
+
+%-------------------------------------------------------------------------
+%	NEW COMMANDS DEFINED
+%-------------------------------------------------------------------------
+% EXAMPLES OF NEW COMMANDS -> here you see how to define new commands
+\newcommand{\bea}{\begin{eqnarray}} % Shortcut for equation arrays
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\e}[1]{\times 10^{#1}}  % Powers of 10 notation
+\newcommand{\mathbbm}[1]{\text{\usefont{U}{bbm}{m}{n}#1}} % From mathbbm.sty
+\newcommand{\pdev}[2]{\frac{\partial#1}{\partial#2}}
+% NB: you can also override some existing commands with the keyword \renewcommand
+
+%----------------------------------------------------------------------------
+%	ADD YOUR PACKAGES (be careful of package interaction)
+%----------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------
+%	ADD YOUR DEFINITIONS AND COMMANDS (be careful of existing commands)
+%----------------------------------------------------------------------------
+
+
+% Do not change Configuration_files/config.tex file unless you really know what you are doing. 
+% This file ends the configuration procedures (e.g. customizing commands, definition of new commands)
+\input{Configuration_files/config}
+
+% Insert here the info that will be displayed into your Title page 
+% -> title of your work
+\renewcommand{\title}{Title of the thesis}
+% -> author name and surname
+\renewcommand{\author}{Proposal for ISC22 Virtual Competition}
+% -> MSc course
+\newcommand{\course}{Xxxxxxxxxxxx Engineering - Ingegneria Xxxxxxxxxxxx}
+% -> advisor name and surname
+\newcommand{\advisor}{Prof. Name Surname}
+% IF AND ONLY IF you need to modify the co-supervisors you also have to modify the file Configuration_files/title_page.tex (ONLY where it is marked)
+\newcommand{\firstcoadvisor}{Name Surname} % insert if any otherwise comment
+%\newcommand{\secondcoadvisor}{Name Surname} % insert if any otherwise comment
+% -> academic year
+\newcommand{\YEAR}{20XX-20XX}
+
+%-------------------------------------------------------------------------
+%	BEGIN OF YOUR DOCUMENT
+%-------------------------------------------------------------------------
+\begin{document}
+\setlength{\parindent}{4em}
+%-----------------------------------------------------------------------------
+% TITLE PAGE
+%-----------------------------------------------------------------------------
+% Do not change Configuration_files/TitlePage.tex (Modify it IF AND ONLY IF you need to add or delete the Co-advisors)
+% This file creates the Title Page of the document
+%\input{Configuration_files/title_page}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%     THESIS MAIN TEXT     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-----------------------------------------------------------------------------
+% INTRODUCTION
+%-----------------------------------------------------------------------------
+
+\section{Who are we?}
+
+\section{Why are we participating?}
+
+As a group of highly motivated students, we see in this new challenge the opportunity to hone our HPC skills and gain new knowledge in this field, learn new things we could use in Apolo, and gain more experience. The multicultural environment of the ISC will also allow us to benchmark our skills against different teams from different backgrounds. It is a chance we don’t usually have and it is particularly important to us since we believe Colombia has much more tech potential than the world gives it credit for, and we wish to prove this belief. 
+
+Finally, we believe we will enjoy this experience because of the complex challenges we will find, both technical and non-technical. As a team, we enjoy taking on new challenges that let us fulfill our passion for HPC. We also enjoy exchanging knowledge through competition with other students around the world in the hope that it will help us grow as proffessionals and human beings. We want to test ourselves and our skills. The ISC22 Student Cluster Competition is the perfect stage for us to do this.
+
+\section{Why do we believe that we have put together a winning team?}
+
+First of all, we think that we formed a winning team because we are a multifaceted one. In that way, each of us has the needed skills for the competition such as IA, software optimization, and system administration. Abilities that are essential in any HPC challenge, while still complementing each other. Additionally, 4 of us have the experience of participating in a world-class HPC competition, which helps us a lot because we know what to expect. Thanks to our training we have developed the ability to find solutions together as an effective team.
+
+\textbf{Our knowledge.} We all have different favorite Computer Science topics, so we end up complementing our knowledge. We have also acquired knowledge while training and competing for the ASC20-21 challenge. We have reached the third position in the final stages of the international competition and achieved several awards: Application Innovation Awards for PRESTO optimization, Most Popular team, and First Prize for classifying into the final stages.
+
+\textbf{Our Student Supercomputer Challenges (SCCs) culture.} We all come from the Apolo Scientific Computing Center, which has formed and educated teams to compete in SCCs since 2015. The team members (students who have now graduated) have passed on their knowledge and experience to the next Apolo generations. We are the fourth generation, nurtured by all the experience and knowledge of our fellow Apolo colleagues that conformed to the previous ones, and we are eager to show what Apolo members are capable of.
+
+\textbf{Team work.} Last but not least, one of the most important winning factors is knowing how to work as a team. In our case we are friends, so we can recognize our abilities and weaknesses in order to reinforce and complement them respectively. In addition to that, all of us have many useful soft skills, such as effective planning and communication, which will help us to focus our efforts on our common goal: winning.
+
+\section{What sorts of diversity in skills does our team possess?}
+
+Due to our experience in Apolo, we have developed team skills such as creative thinking, problem-solving facilities, handling of situations under pressure, besides skills related to the administration of GNU/Linux systems. We have extensive experience of: network management, configuration automatization using Ansible, and SLURM Resource Manager administration (and usage). We also have experience administrating cloud-based HPC systems using AWS and Google Cloud.
+
+Our team is quite diverse with regards to interests and knowledge. We have different experiences and even different major degrees, and because of that, some of us have experience related to, for instance: Mathematical and heuristic optimization techniques, machine learning, distributed computing, parallelization of processes using MPI4PY and OpenMP, Software optimization of HPC applications, and Parallelization of pipelines using Python.
+
+\section{Why will our team work well together?}
+
+All of us have worked together in the Apolo Scientific Computing Center; more than team members, we are friends. This improves honest and helpful communication, respect for our different opinions, and trust in each other; all qualities that improve our teamwork in such an intense competition as ISC. 
+
+On the other hand each team member has his/her own skills, going from tech knowledge to soft skills. Each one makes this team a fully assembled one, so that every time somebody feels stuck, there will be someone else giving the needed support to succeed with flying colors. This starts from understanding and valuing the importance of letting the person with the best skill lead our work for the task given.
+
+Although each one has a different strength, all of us are aware of the great performance we have as a team. We select roles that complement each other and create a strong foundation as a result. Finally, the experience that most of us have in top-level competitions such as ASC20-21 helps us work together, communicate and work proactively as a team under pressure.
+
+\section{What experience do our team members have?}
+
+All of our team members have been part of the Apolo Scientific Computing Center at EAFIT. This has allowed us to gain experience in System Administration, DevOps, and HPC by solving real-life engineering problems related to providing safe and reliable computing facilities to support the scientific community inside the university. 
+
+Furthermore, four of our team members competed in ASC20-21, a fulfillment experience which required hard work, and companionship. This experience  nurtured their knowledge of HPC, and allowed them to show it to the world. During this event, the participating members received an award for reaching the best performance in one of the applications.
+
+Additionally, some of our team members have also taken the HPC course at EAFIT, providing them with the formal knowledge associated with this field, which has complemented and consolidated their previous empirical knowledge.
+
+As it is clear, all of our team members have not only a good understanding, but also a profound liking for HPC. We also pursue personal projects connected to the field, integrating it into our academic and professional lives.
+
+
+\section{How will our team work together to tune and optimize the application set?}
+
+We will divide the team into smaller subgroups that will work on the applications independently. Each subgroup will have 2 or 3 people working together, depending on the difficulty of the application and the motivation of each person towards them. This method works better than 6 of us working on each task because the engagement each person can achieve is better. All of us will also maintain daily communication and updates about the progress of each subgroup, so that we can help each other when needed. After we have selected the subgroups, we will proceed to work on optimizing the application set.
+
+The first step is to understand how the application works. One of the most important things in this phase is to read the official documentation of the application. We need to understand as much of the execution of the application as possible, and to have a strong understanding of the way in which it solves the computational problem at hand. For this, our most frequent method is for everyone to read the documentation individually and then discuss it. Whenever a question arises we share it and solve it together. Here are a common set of questions we have to answer before we execute the application:
+\begin{itemize}
+	\item In which programming language is the application implemented?
+	\item Is it parallel? If so, what libraries does it use to parallelize?
+	\item Does it support distributed parallel execution (multinode)?
+	\item If so, what is the ideal number of processes per node?
+	\item Does it support multithreading?
+	\item If so, what is the ideal number of threads per process?
+\end{itemize}
+
+The second step is the installation process. We generally try to use the Intel suite (compilers, MPI libraries, etc.) at first, because it usually results in a better performance for Intel architectures. 
+
+The third one is to execute a minimum working example of the application so we know the application was successfully installed. This could also be a test suite provided by the application developers.
+
+The fourth step is to spend time identifying the cheapest (in terms of effort) and most effective ways to optimize the execution time. For example, we would make sure we are using the high-speed network (e.g. Infiniband) or what are the best parameters that the application could use. 
+
+The fifth step is the parameterization process. It is usually very specific to each application, and involves a lot of research. E.g., for optimizing HPL we would spend time identifying the best N value for our cluster.
+
+The sixth step is profiling, in which we use profilers to identify the most time-consuming tasks that the application performs. 
+
+The seventh step is to study the code portions corresponding to the tasks found in the previous step and try to find ways in which to optimize them. Some examples are given:
+
+\begin{itemize}
+	\item To replace heavy operations (such as modulo of numbers that are power of 2) with more lightweight ones (such as bit magic using bit shifting).
+	\item To rewrite some basic operations using bit shifting.
+	\item To use vectorization, for example using OpenMP pragmas.
+	\item To rewrite some operations using compiler intrinsics that take advantage of the specific architecture of our cluster.
+	\item To parallelize some secuencial code.
+	\item To reduce some arithmetic operations to simpler ones using mathematical identities.
+	\item To implement cache blocking in order to better utilize the caches.
+\end{itemize}
+
+\section{The commitment of EAFIT University to educating the broader student community about the usefulness and the accessibility of High Performance Computing at your institution}
+
+EAFIT has shown its commitment to educating its students on the usefulness and accessibility of high-performance computers in many different ways, both through classes and extracurricular activities. Firstly, EAFIT has a research assistant program for students who show great interest in high-performance computing. This allows these students to collaborate and improve their skills by taking different system administrator-like positions under the supervision of a technical director and adviser professor, who works for the Apolo Scientific Computing Center. 
+
+Furthermore, there are different classes that are available to all members of the student body. These include an HPC class and a Computational Biology class both of which use some of the resources Apolo, our supercomputer, offers. In the HPC class, students will be exposed to different complex applications and will run and optimize them through competition and cooperation, hoping to achieve the highest performance in the classroom. Students who choose to take this subject will use resources offered by Cronos, the smallest of our clusters, as well as cloud resources served by AWS. The Computational Biology class uses Apolo’s resources to solve complex problems such as DNA sequence analysis and prediction of protein function. Students who take this subject will get a chance to learn even more about high-performance computing by relying on Apolo's public documentation and research assistants.
+
+\section{How is HPC integrated in the educational curriculum of our institution?}
+
+As previously stated EAFIT has different subjects both in their graduate and undergraduate programs that integrate HPC. For undergraduate students in programs such as Computer Science, Engineering Mathematics, Biology, Agronomic Engineering, and others, there are subjects such as HPC, Telematics and Special Topics in Telematics, Computational Biology, and Artificial Intelligence. Some of these subjects cover a variety of topics fundamental to HPC, such as network management and system architecture, while others rely on HPC as a fundamental tool to achieve their educational purposes.
+
+Talking about graduate programs, the university has a master's program on IT, where students learn how to develop networks for high-performance systems. It also offers different subjects such as Architectural Thinking for IT solutions, Cloud Computing, and Data-Intensive Systems. Additionally, there is a master’s degree in Data Science, whose emphasis is placed on deepening the topic of computing large amounts of information through to the use of HPC. 
+
+\section{Do we have an HPC cluster on our educational institution to practice the benchmarks?}
+
+Yes. EAFIT is home to two different clusters; Apolo and Cronos, both of which are used for educational purposes and are open to the research body of the University, including professors and students. The Apolo Scientific Computing Center has kindly let us use some of their nodes to test HPC tools and applications (xCAT, Ansible, HPL, QuEST, PRESTO) and its directors have also offered some nodes for us to train and prepare for ISC22.
+
+\section{Team Captain Information}
+Our team captain is Vincent Alejandro Arcila:
+\end{document}

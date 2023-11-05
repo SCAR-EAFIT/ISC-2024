@@ -74,196 +74,196 @@
 %-------------------------------------------------------------------------
 % EXAMPLES OF NEW COMMANDS -> here you see how to define new commands
 \newcommand{\bea}{\begin{eqnarray}} % Shortcut for equation arrays
-    \newcommand{\eea}{\end{eqnarray}}
-    \newcommand{\e}[1]{\times 10^{#1}}  % Powers of 10 notation
-    \newcommand{\mathbbm}[1]{\text{\usefont{U}{bbm}{m}{n}#1}} % From mathbbm.sty
-    \newcommand{\pdev}[2]{\frac{\partial#1}{\partial#2}}
-    % NB: you can also override some existing commands with the keyword \renewcommand
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\e}[1]{\times 10^{#1}}  % Powers of 10 notation
+\newcommand{\mathbbm}[1]{\text{\usefont{U}{bbm}{m}{n}#1}} % From mathbbm.sty
+\newcommand{\pdev}[2]{\frac{\partial#1}{\partial#2}}
+% NB: you can also override some existing commands with the keyword \renewcommand
 
-    %----------------------------------------------------------------------------
-    %	ADD YOUR PACKAGES (be careful of package interaction)
-    %----------------------------------------------------------------------------
-
-
-    %----------------------------------------------------------------------------
-    %	ADD YOUR DEFINITIONS AND COMMANDS (be careful of existing commands)
-    %----------------------------------------------------------------------------
+%----------------------------------------------------------------------------
+%	ADD YOUR PACKAGES (be careful of package interaction)
+%----------------------------------------------------------------------------
 
 
-    % Do not change Configuration_files/config.tex file unless you really know what you are doing.
-    % This file ends the configuration procedures (e.g. customizing commands, definition of new commands)
-    \input{Configuration_files/config}
-
-    % Insert here the info that will be displayed into your Title page
-    % -> title of your work
-    \renewcommand{\title}{Title of the thesis}
-    % -> author name and surname
-    \renewcommand{\author}{Proposal for ISC24 Virtual Competition}
-    % -> MSc course
-    \newcommand{\course}{Xxxxxxxxxxxx Engineering - Ingegneria Xxxxxxxxxxxx}
-    % -> advisor name and surname
-    \newcommand{\advisor}{Prof. Name Surname}
-    % IF AND ONLY IF you need to modify the co-supervisors you also have to modify the file Configuration_files/title_page.tex (ONLY where it is marked)
-    \newcommand{\firstcoadvisor}{Name Surname} % insert if any otherwise comment
-    %\newcommand{\secondcoadvisor}{Name Surname} % insert if any otherwise comment
-    % -> academic year
-    \newcommand{\YEAR}{20XX-20XX}
-
-    %-------------------------------------------------------------------------
-    %	BEGIN OF YOUR DOCUMENT
-    %-------------------------------------------------------------------------
-    \begin{document}
-    \setlength{\parindent}{4em}
-    %-----------------------------------------------------------------------------
-    % TITLE PAGE
-    %-----------------------------------------------------------------------------
-    % Do not change Configuration_files/TitlePage.tex (Modify it IF AND ONLY IF you need to add or delete the Co-advisors)
-    % This file creates the Title Page of the document
-    %\input{Configuration_files/title_page}
-
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    %%     THESIS MAIN TEXT     %%
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-    %-----------------------------------------------------------------------------
-    % INTRODUCTION
-    %-----------------------------------------------------------------------------
-
-    \section{Who are we?}
-    \begin{center}
-        \includegraphics[width = .45\linewidth]{Images/Santiago Rodriguez.jpeg}
-    \end{center}
-    \begin{center}
-        \textbf{Santiago Rodriguez Mojica}
-    \end{center}
-    My name is Santiago Rodriguez, I am a student currently studying the 4th semester of systems engineering at EAFIT University, I graduated from high school in 2021. I am currently interested in multiple modern technologies. Mainly High-Performance Computing (HPC) and cybersecurity. In addition, I have participated in some projects within my educational environment, where I have appropriated knowledge from these disciplines. Some experiences in competitions, projects, and jobs, have allowed me to acquire and improve my skills, as well as to meet more people related to these technologies. I am firmly enthusiastic to take advantage of these new technologies and to have more and more incidence in future projects, to reach new achievements, and to work on future challenges in this exciting and immense field as it is technology.
-
-    \begin{center}
-        \includegraphics[width = .45\linewidth]{Images/Santiago Neusa.jpeg}
-    \end{center}
-    \begin{center}
-        \textbf{Santiago Neusa Ruiz}
-        \bigskip
-    \end{center}
-    I'm Santiago Neusa, a student of Computer Science at EAFIT University. I graduated from school in 2021 with honors, and my score on the state tests helped me to obtain a scholarship for university. Even if I didn't know much about computing, my interest in math and science took me to study Computer Science and since then I have been very happy. I love computing and talk about it. Some of my fields of interest are parallel and high-performance computing, math applied to computing, competitive programming, electronics, and data science. I don't just like to learn about them but teach and explain all I know to others, that is why I belong to the university tutoring program where I help students to understand class topics. I have participated in multiple workshops, conferences, and competencies related to my interests. Last summer I went to a parallel computing summer camp and a competitive programming training camp. Also, I have developed projects both personally and with the university that involve automation, IoT, web development, and scientific computing.
-
-    \begin{center}
-        \includegraphics[width = .45\linewidth]{Images/Miguel Hoyos.jpeg}
-    \end{center}
-    \begin{center}
-        \textbf{Miguel Angel Hoyos}
-    \end{center}
-    I am Miguel Angel Hoyos, a student currently studying the 4th semester of systems engineering at EAFIT University, I graduated from high school back in 2021. Right now, I'm totally into all things tech, especially high-performance computing (HPC) and machine learning. I've been involved in some interesting projects during my time at university, like those competitive programming marathons. They've given me a solid grasp of these subjects. Plus, I've had some hands-on experiences through competitions, projects, and jobs, which helped me learn and connect with more people in the tech world. I'm excited to dive deeper into these new technologies, get more involved in upcoming projects, reach new goals, and take on the exciting challenges that this huge tech field has to offer.
-
-    \begin{center}
-        \includegraphics[width = .45\linewidth]{Images/Julian Valencia.jpeg}
-    \end{center}
-    \begin{center}
-        \textbf{Julian Estiven Valencia}
-    \end{center}
-    I am Julian Valencia, currently, I am studying systems engineering at EAFIT University as a scholarship student. I am passionate about learning more about various technologies, from data analysis and project management, skills that have allowed me to be part of a student group focused on technology and the creation of technological solutions, to high-performance computing, a topic I am still getting started with but hope to learn much more about. This interest began through other peers from whom I have learned many things.
-
-    \begin{center}
-        \includegraphics[width = .45\linewidth]{Images/Sebastian Henao.jpg}
-    \end{center}
-    \begin{center}
-        \textbf{Sebastian Jimenez Henao}
-    \end{center}
-    I am a 6th semester Physics Engineering student, I attended Fontan High School, and since I was 10 years old I have been interested in artificial intelligence, starting with my passion for hard science fiction (Greg Egan, Kim Stanley, etc.), then progressing to reading the texts of artificial intelligence researcher/philosopher Eliezer Yudkowsky. I am convinced that artificial intelligence is an invention on the level of the invention of fire on the scale of the development of human technology, hence I am pivoting to learning the technologies that enable its development such as high-performance computing.
-
-    \section{Why are we participating?}
-
-    As a new group of highly motivated students, we see in this new challenge the opportunity to hone and increase our HPC skills and gain new knowledge in this field, learn new things we could use in Apolo, and gain more experience. The multicultural environment of the ISC will also allow us to benchmark our skills against different teams from different backgrounds. It is a chance we don’t usually have and it is particularly important to us since we believe Colombia has much more tech potential than the world gives it credit for, and we wish to prove this belief.
-
-    Finally, we believe we will enjoy this experience because of the complex challenges we will find, both technical and non-technical. As a team, we enjoy taking on new challenges that let us fulfill our passion for HPC. We also enjoy exchanging knowledge through competition with other students around the world in the hope that it will help us grow as professionals and human beings. We want to test ourselves and our skills. The ISC24 Student Cluster Competition is the perfect stage for us to do this.
-
-    \section{Why do we believe that we have put together a winning team?}
-
-    First of all, we think that we formed a winning team because we are a multifaceted one. In that way, each of us has different skills and knowledge such as IA, software optimization, and system administration. This will help us by complementing each other. Additionally, 3 of us have the experience of participating in a world-class HPC competition, which helps us a lot because we know what to expect. And finally, we are developing and implementing a plan that help us to face the challenges in this competition.
-
-    \textbf{Our knowledge.} We all have different favorite Computer Science topics, so we end up complementing our knowledge. We have also acquired knowledge while training and competing for the ASC22-23 challenge. Additionally, some of our members have been working on Apolo, where they have learned various skills, such as terminal management, scientific software compilation, SLURM, distributed computing, and more.
-
-    \textbf{Our Student Supercomputer Challenges (SCCs) culture.} We all come from the Apolo Scientific Computing Center, which has formed and educated teams to compete in SCCs since 2015. The team members (students who have now graduated) have passed on their knowledge and experience to the next Apolo generations. We are the fifth generation, nurtured by all the experience and knowledge of our fellow Apolo colleagues who conformed to the previous ones.
-
-    \textbf{Team work.} Last but not least, one of the most important winning factors is knowing how to work as a team. In our case we are friends, so we can recognize our abilities and weaknesses in order to reinforce and complement them respectively. In addition to that, all of us have many useful soft skills, such as effective planning and communication, which will help us to focus our efforts on our common goal: winning.
-
-    \section{What sorts of diversity in skills does our team possess?}
-
-    Due to our experience in Apolo, we have developed team skills such as creative thinking, problem-solving facilities, and handling of situations under pressure, besides skills related to the administration of GNU/Linux systems. We have extensive experience in network management, scientific software compilation, and SLURM Resource Manager administration (and usage). We also have experience administrating cloud-based HPC systems using AWS and Google Cloud. Another important skill is that some of our members have been working on competitive programming, this has given them the ability to resolve problems and think about other possibilities.
-
-    Our team is quite diverse with regard to interests and knowledge. We have different experiences and interests, and because of that, some of us have experience related to, for instance: machine learning, distributed computing, parallelization of processes using MPI4PY and OpenMP, Software optimization of HPC applications, and Parallelization of pipelines using Python. (Poner esto un poco más realista)
-
-    \section{Why will our team work well together?}
-
-    Some of us have worked together in the Apolo Scientific Computing Center; more than team members, we are friends. This improves honest and helpful communication, respect for our different opinions, and trust in each other; all qualities that improve our teamwork in such an intense competition as ISC.
-
-    On the other hand, each team member has his own skills, going from tech knowledge to soft skills. Each one makes this team a fully assembled one, so that every time somebody feels stuck, there will be someone else giving the needed support to succeed with flying colors. This starts from understanding and valuing the importance of letting the person with the best skill lead our work for the task given.
-
-    Although each one has a different strength, all of us are aware of the great performance we have as a team. We select roles that complement each other and create a strong foundation as a result. Finally, the experience that most of us have in top-level competitions such as ASC22-23 helps us work together, communicate, and work proactively as a team under pressure.
-
-    \section{What experience do our team members have?}
-
-    Some of our team members have been part of the Apolo Scientific Computing Center at EAFIT. This has allowed us to gain experience in System Administration, DevOps, and HPC by solving real-life engineering problems related to providing safe and reliable computing facilities to support the scientific community inside the university.
-
-    Furthermore, four of our team members competed in ASC22-23, a fulfillment experience that required hard work, and companionship. This experience nurtured our knowledge of HPC and allowed them to show it to the world.
-
-    Additionally, some of our team members have also taken the HPC course at EAFIT, providing them with the formal knowledge associated with this field, which has complemented and consolidated their previous empirical knowledge. (Poner algo con cursos)
-
-    As it is clear, all of our team members have not only a good understanding but also a profound liking for HPC. We also pursue personal projects connected to the field, integrating it into our academic and professional lives.
+%----------------------------------------------------------------------------
+%	ADD YOUR DEFINITIONS AND COMMANDS (be careful of existing commands)
+%----------------------------------------------------------------------------
 
 
-    \section{How will our team work together to tune and optimize the application set?}
+% Do not change Configuration_files/config.tex file unless you really know what you are doing.
+% This file ends the configuration procedures (e.g. customizing commands, definition of new commands)
+\input{Configuration_files/config}
 
-    We will divide the team into smaller subgroups that will work on the applications independently. Each subgroup will have 2 or 3 people working together, depending on the difficulty of the application and the motivation of each person towards them. This method works better than 6 of us working on each task because the engagement each person can achieve is better. All of us will also maintain daily communication and updates about the progress of each subgroup so that we can help each other when needed. The idea with these subgroups is that each member can work on an application that can be interesting for that member, which will make the competition more exited for each member.
+% Insert here the info that will be displayed into your Title page
+% -> title of your work
+\renewcommand{\title}{Title of the thesis}
+% -> author name and surname
+\renewcommand{\author}{Proposal for ISC24 Virtual Competition}
+% -> MSc course
+\newcommand{\course}{Xxxxxxxxxxxx Engineering - Ingeneria Xxxxxxxxxxxx}
+% -> advisor name and surname
+\newcommand{\advisor}{Prof. Name Surname}
+% IF AND ONLY IF you need to modify the co-supervisors you also have to modify the file Configuration_files/title_page.tex (ONLY where it is marked)
+\newcommand{\firstcoadvisor}{Name Surname} % insert if any otherwise comment
+%\newcommand{\secondcoadvisor}{Name Surname} % insert if any otherwise comment
+% -> academic year
+\newcommand{\YEAR}{20XX-20XX}
 
-    The first step is to understand how the application works. One of the most important things in this phase is to read the official documentation of the application. We need to understand as much of the execution of the application as possible and to have a strong understanding of the way in which it solves the computational problem at hand. For this, our most frequent method is for everyone to read the documentation individually and then discuss it. Whenever a question arises we share it and solve it together. Here are a common set of questions we have to answer before we execute the application:
-    \begin{itemize}
-        \item In which programming language is the application implemented?
-        \item Is it parallel? If so, what libraries does it use to parallelize?
-        \item Does it support distributed parallel execution (multinode)?
-        \item If so, what is the ideal number of processes per node?
-        \item Does it support multithreading?
-        \item If so, what is the ideal number of threads per process?
-    \end{itemize}
+%-------------------------------------------------------------------------
+%	BEGIN OF YOUR DOCUMENT
+%-------------------------------------------------------------------------
+\begin{document}
+\setlength{\parindent}{4em}
+%-----------------------------------------------------------------------------
+% TITLE PAGE
+%-----------------------------------------------------------------------------
+% Do not change Configuration_files/TitlePage.tex (Modify it IF AND ONLY IF you need to add or delete the Co-advisors)
+% This file creates the Title Page of the document
+%\input{Configuration_files/title_page}
 
-    The second step is the installation process. We generally try to use the Intel suite (compilers, MPI libraries, etc.) at first, because it usually results in a better performance for Intel architectures.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%     THESIS MAIN TEXT     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-    The third one is to execute a minimum working example of the application so we know the application was successfully installed. This could also be a test suite provided by the application developers.
+%-----------------------------------------------------------------------------
+% INTRODUCTION
+%-----------------------------------------------------------------------------
 
-    The fourth step is to spend time identifying the cheapest (in terms of effort) and most effective ways to optimize the execution time. For example, we would make sure we are using a high-speed network (e.g. Infiniband) or what are the best parameters that the application could use.
+\section{Who are we?}
+\begin{center}
+	\includegraphics[width = .45\linewidth]{Images/Santiago Rodriguez.jpeg}
+\end{center}
+\begin{center}
+    \textbf{Santiago Rodriguez Mojica}
+\end{center}
+My name is Santiago Rodriguez, I am a student currently studying the 4th semester of systems engineering at EAFIT University, I graduated from high school in 2021. I am currently interested in multiple modern technologies. Mainly High-Performance Computing (HPC) and cybersecurity. In addition, I have participated in some projects within my educational environment, where I have appropriated knowledge from these disciplines. Some experiences in competitions, projects, and jobs, have allowed me to acquire and improve my skills, as well as to meet more people related to these technologies. I am firmly enthusiastic to take advantage of these new technologies and to have more and more incidence in future projects, to reach new achievements, and to work on future challenges in this exciting and immense field as it is technology.
 
-    The fifth step is the parameterization process. It is usually very specific to each application and involves a lot of research. E.g., for optimizing HPL we would spend time identifying the best N value for our cluster.
+\begin{center}
+    \includegraphics[width = .45\linewidth]{Images/Santiago Neusa.jpeg}
+\end{center}
+\begin{center}
+    \textbf{Santiago Neusa Ruiz}
+    \bigskip
+\end{center}
+I'm Santiago Neusa, a student of Computer Science at EAFIT University. I graduated from school in 2021 with honors, and my score on the state tests helped me to obtain a scholarship for university. Even if I didn't know much about computing, my interest in math and science took me to study Computer Science and since then I have been very happy. I love computing and talk about it. Some of my fields of interest are parallel and high-performance computing, math applied to computing, competitive programming, electronics, and data science. I don't just like to learn about them but teach and explain all I know to others, that is why I belong to the university tutoring program where I help students to understand class topics. I have participated in multiple workshops, conferences, and competencies related to my interests. Last summer I went to a parallel computing summer camp and a competitive programming training camp. Also, I have developed projects both personally and with the university that involve automation, IoT, web development, and scientific computing.
 
-    The sixth step is profiling, in which we use profilers to identify the most time-consuming tasks that the application performs.
+\begin{center}
+    \includegraphics[width = .45\linewidth]{Images/Miguel Hoyos.jpeg}
+\end{center}
+\begin{center}
+    \textbf{Miguel Angel Hoyos}
+\end{center}
+I am Miguel Angel Hoyos, a student currently studying the 4th semester of systems engineering at EAFIT University, I graduated from high school back in 2021. Right now, I'm totally into all things tech, especially high-performance computing (HPC) and machine learning. I've been involved in some interesting projects during my time at university, like those competitive programming marathons. They've given me a solid grasp of these subjects. Plus, I've had some hands-on experiences through competitions, projects, and jobs, which helped me learn and connect with more people in the tech world. I'm excited to dive deeper into these new technologies, get more involved in upcoming projects, reach new goals, and take on the exciting challenges that this huge tech field has to offer.
 
-    The seventh step is to study the code portions corresponding to the tasks found in the previous step and try to find ways in which to optimize them. Some examples are given:
+\begin{center}
+    \includegraphics[width = .45\linewidth]{Images/Julian Valencia.jpeg}
+\end{center}
+\begin{center}
+    \textbf{Julian Estiven Valencia}
+\end{center}
+I am Julian Valencia, currently, I am studying systems engineering at EAFIT University as a scholarship student. I am passionate about learning more about various technologies, from data analysis and project management, skills that have allowed me to be part of a student group focused on technology and the creation of technological solutions, to high-performance computing, a topic I am still getting started with but hope to learn much more about. This interest began through other peers from whom I have learned many things.
 
-    \begin{itemize}
-        \item To replace heavy operations (such as modulo of numbers that are the power of 2) with more lightweight ones (such as bit magic using bit shifting).
-        \item To rewrite some basic operations using bit shifting.
-        \item To use vectorization, for example using OpenMP pragmas.
-        \item To rewrite some operations using compiler intrinsics that take advantage of the specific architecture of our cluster.
-        \item To parallelize some secuencial code.
-        \item To reduce some arithmetic operations to simpler ones using mathematical identities.
-        \item To implement cache blocking in order to better utilize the caches.
-    \end{itemize}
+\begin{center}
+    \includegraphics[width = .45\linewidth]{Images/Sebastian Henao.jpg}
+\end{center}
+\begin{center}
+    \textbf{Sebastian Jimenez Henao}
+\end{center}
+I am a 6th semester Physics Engineering student, I attended Fontan High School, and since I was 10 years old I have been interested in artificial intelligence, starting with my passion for hard science fiction (Greg Egan, Kim Stanley, etc.), then progressing to reading the texts of artificial intelligence researcher/philosopher Eliezer Yudkowsky. I am convinced that artificial intelligence is an invention on the level of the invention of fire on the scale of the development of human technology, hence I am pivoting to learning the technologies that enable its development such as high-performance computing.
 
-    \section{The commitment of EAFIT University to educating the broader student community about the usefulness and the accessibility of High-Performance Computing at your institution}
+\section{Why are we participating?}
 
-    EAFIT has shown its commitment to educating its students on the usefulness and accessibility of high-performance computers in many different ways, both through classes and extracurricular activities. Firstly, EAFIT has a research assistant program for students who show great interest in high-performance computing. This allows these students to collaborate and improve their skills by taking different system administrator-like positions under the supervision of a technical director and adviser professor, who works for the Apolo Scientific Computing Center.
+As a new group of highly motivated students, we see in this new challenge the opportunity to hone and increase our HPC skills and gain new knowledge in this field, learn new things we could use in Apolo, and gain more experience. The multicultural environment of the ISC will also allow us to benchmark our skills against different teams from different backgrounds. It is a chance we don’t usually have and it is particularly important to us since we believe Colombia has much more tech potential than the world gives it credit for, and we wish to prove this belief.
 
-    Furthermore, there are different classes that are available to all members of the student body. These include an HPC class and a Computational Biology class both of which use some of the resources Apolo, our supercomputer, offers. In the HPC class, students will be exposed to different complex applications and will run and optimize them through competition and cooperation, hoping to achieve the highest performance in the classroom. Students who choose to take this subject will use resources offered by Cronos, the smallest of our clusters, as well as cloud resources served by AWS. The Computational Biology class uses Apolo’s resources to solve complex problems such as DNA sequence analysis and prediction of protein function. Students who take this subject will get a chance to learn even more about high-performance computing by relying on Apolo's public documentation and research assistants.
+Finally, we believe we will enjoy this experience because of the complex challenges we will find, both technical and non-technical. As a team, we enjoy taking on new challenges that let us fulfill our passion for HPC. We also enjoy exchanging knowledge through competition with other students around the world in the hope that it will help us grow as professionals and human beings. We want to test ourselves and our skills. The ISC24 Student Cluster Competition is the perfect stage for us to do this.
 
-    \section{How is HPC integrated into the educational curriculum of our institution?}
+\section{Why do we believe that we have put together a winning team?}
 
-    As previously stated EAFIT has different subjects both in their graduate and undergraduate programs that integrate HPC. For undergraduate students in programs such as Computer Science, Engineering Mathematics, Biology, Agronomic Engineering, and others, there are subjects such as HPC, Telematics, and Special Topics in Telematics, Computational Biology, and Artificial Intelligence. Some of these subjects cover a variety of topics fundamental to HPC, such as network management and system architecture, while others rely on HPC as a fundamental tool to achieve their educational purposes.
+First of all, we think that we formed a winning team because we are a multifaceted one. In that way, each of us has different skills and knowledge such as IA, software optimization, and system administration. This will help us by complementing each other. Additionally, 3 of us have the experience of participating in a world-class HPC competition, which helps us a lot because we know what to expect. And finally, we are developing and implementing a plan that help us to face the challenges in this competition.
 
-    Talking about graduate programs, the university has a master's program in IT, where students learn how to develop networks for high-performance systems. It also offers different subjects such as Architectural Thinking for IT solutions, Cloud Computing, and Data-Intensive Systems. Additionally, there is a master’s degree in Data Science, whose emphasis is placed on deepening the topic of computing large amounts of information through to the use of HPC.
+\textbf{Our knowledge.} We all have different favorite Computer Science topics, so we end up complementing our knowledge. We have also acquired knowledge while training and competing for the ASC22-23 challenge. Additionally, some of our members have been working on Apolo, where they have learned various skills, such as terminal management, scientific software compilation, SLURM, distributed computing, and more.
 
-    \section{Do we have an HPC cluster in our educational institution to practice the benchmarks?}
+\textbf{Our Student Supercomputer Challenges (SCCs) culture.} We all come from the Apolo Scientific Computing Center, which has formed and educated teams to compete in SCCs since 2015. The team members (students who have now graduated) have passed on their knowledge and experience to the next Apolo generations. We are the fifth generation, nurtured by all the experience and knowledge of our fellow Apolo colleagues who conformed to the previous ones.
 
-    Yes. EAFIT is home to two different clusters; Apolo and Cronos, both of which are used for educational purposes and are open to the research body of the University, including professors and students. The Apolo Scientific Computing Center has kindly let us use some of their nodes to test HPC tools and applications (xCAT, Ansible, HPL, QuEST, PRESTO), and its directors have also offered some nodes for us to train and prepare for ISC24 and develop some expertise.
+\textbf{Team work.} Last but not least, one of the most important winning factors is knowing how to work as a team. In our case we are friends, so we can recognize our abilities and weaknesses in order to reinforce and complement them respectively. In addition to that, all of us have many useful soft skills, such as effective planning and communication, which will help us to focus our efforts on our common goal: winning.
 
-    \section{Team Captain Information}
-    Our team captain is Juan Manuel Gomez.
-    \end{document}
+\section{What sorts of diversity in skills does our team possess?}
+
+Due to our experience in Apolo, we have developed team skills such as creative thinking, problem-solving facilities, and handling of situations under pressure, besides skills related to the administration of GNU/Linux systems. We have extensive experience in network management, scientific software compilation, and SLURM Resource Manager administration (and usage). We also have experience administrating cloud-based HPC systems using AWS and Google Cloud. Another important skill is that some of our members have been working on competitive programming, this has given them the ability to resolve problems and think about other possibilities.
+
+Our team is quite diverse with regard to interests and knowledge. We have different experiences and interests, and because of that, some of us have experience related to, for instance: machine learning, distributed computing, parallelization of processes using MPI4PY and OpenMP, Software optimization of HPC applications, and Parallelization of pipelines using Python. (Poner esto un poco más realista)
+
+\section{Why will our team work well together?}
+
+Some of us have worked together in the Apolo Scientific Computing Center; more than team members, we are friends. This improves honest and helpful communication, respect for our different opinions, and trust in each other; all qualities that improve our teamwork in such an intense competition as ISC.
+
+On the other hand, each team member has his own skills, going from tech knowledge to soft skills. Each one makes this team a fully assembled one, so that every time somebody feels stuck, there will be someone else giving the needed support to succeed with flying colors. This starts from understanding and valuing the importance of letting the person with the best skill lead our work for the task given.
+
+Although each one has a different strength, all of us are aware of the great performance we have as a team. We select roles that complement each other and create a strong foundation as a result. Finally, the experience that most of us have in top-level competitions such as ASC22-23 helps us work together, communicate, and work proactively as a team under pressure.
+
+\section{What experience do our team members have?}
+
+Some of our team members have been part of the Apolo Scientific Computing Center at EAFIT. This has allowed us to gain experience in System Administration, DevOps, and HPC by solving real-life engineering problems related to providing safe and reliable computing facilities to support the scientific community inside the university.
+
+Furthermore, four of our team members competed in ASC22-23, a fulfillment experience that required hard work, and companionship. This experience nurtured our knowledge of HPC and allowed them to show it to the world.
+
+Additionally, some of our team members have also taken the HPC course at EAFIT, providing them with the formal knowledge associated with this field, which has complemented and consolidated their previous empirical knowledge. (Poner algo con cursos)
+
+As it is clear, all of our team members have not only a good understanding but also a profound liking for HPC. We also pursue personal projects connected to the field, integrating it into our academic and professional lives.
+
+
+\section{How will our team work together to tune and optimize the application set?}
+
+We will divide the team into smaller subgroups that will work on the applications independently. Each subgroup will have 2 or 3 people working together, depending on the difficulty of the application and the motivation of each person towards them. This method works better than 6 of us working on each task because the engagement each person can achieve is better. All of us will also maintain daily communication and updates about the progress of each subgroup so that we can help each other when needed. The idea with these subgroups is that each member can work on an application that can be interesting for that member, which will make the competition more exited for each member.
+
+The first step is to understand how the application works. One of the most important things in this phase is to read the official documentation of the application. We need to understand as much of the execution of the application as possible and to have a strong understanding of the way in which it solves the computational problem at hand. For this, our most frequent method is for everyone to read the documentation individually and then discuss it. Whenever a question arises we share it and solve it together. Here are a common set of questions we have to answer before we execute the application:
+\begin{itemize}
+    \item In which programming language is the application implemented?
+    \item Is it parallel? If so, what libraries does it use to parallelize?
+    \item Does it support distributed parallel execution (multinode)?
+    \item If so, what is the ideal number of processes per node?
+    \item Does it support multithreading?
+    \item If so, what is the ideal number of threads per process?
+\end{itemize}
+
+The second step is the installation process. We generally try to use the Intel suite (compilers, MPI libraries, etc.) at first, because it usually results in a better performance for Intel architectures.
+
+The third one is to execute a minimum working example of the application so we know the application was successfully installed. This could also be a test suite provided by the application developers.
+
+The fourth step is to spend time identifying the cheapest (in terms of effort) and most effective ways to optimize the execution time. For example, we would make sure we are using a high-speed network (e.g. Infiniband) or what are the best parameters that the application could use.
+
+The fifth step is the parameterization process. It is usually very specific to each application and involves a lot of research. E.g., for optimizing HPL we would spend time identifying the best N value for our cluster.
+
+The sixth step is profiling, in which we use profilers to identify the most time-consuming tasks that the application performs.
+
+The seventh step is to study the code portions corresponding to the tasks found in the previous step and try to find ways in which to optimize them. Some examples are given:
+
+\begin{itemize}
+    \item To replace heavy operations (such as modulo of numbers that are the power of 2) with more lightweight ones (such as bit magic using bit shifting).
+    \item To rewrite some basic operations using bit shifting.
+    \item To use vectorization, for example using OpenMP pragmas.
+    \item To rewrite some operations using compiler intrinsics that take advantage of the specific architecture of our cluster.
+    \item To parallelize some secuencial code.
+    \item To reduce some arithmetic operations to simpler ones using mathematical identities.
+    \item To implement cache blocking in order to better utilize the caches.
+\end{itemize}
+
+\section{The commitment of EAFIT University to educating the broader student community about the usefulness and the accessibility of High-Performance Computing at your institution}
+
+EAFIT has shown its commitment to educating its students on the usefulness and accessibility of high-performance computers in many different ways, both through classes and extracurricular activities. Firstly, EAFIT has a research assistant program for students who show great interest in high-performance computing. This allows these students to collaborate and improve their skills by taking different system administrator-like positions under the supervision of a technical director and adviser professor, who works for the Apolo Scientific Computing Center.
+
+Furthermore, there are different classes that are available to all members of the student body. These include an HPC class and a Computational Biology class both of which use some of the resources Apolo, our supercomputer, offers. In the HPC class, students will be exposed to different complex applications and will run and optimize them through competition and cooperation, hoping to achieve the highest performance in the classroom. Students who choose to take this subject will use resources offered by Cronos, the smallest of our clusters, as well as cloud resources served by AWS. The Computational Biology class uses Apolo’s resources to solve complex problems such as DNA sequence analysis and prediction of protein function. Students who take this subject will get a chance to learn even more about high-performance computing by relying on Apolo's public documentation and research assistants.
+
+\section{How is HPC integrated into the educational curriculum of our institution?}
+
+As previously stated EAFIT has different subjects both in their graduate and undergraduate programs that integrate HPC. For undergraduate students in programs such as Computer Science, Engineering Mathematics, Biology, Agronomic Engineering, and others, there are subjects such as HPC, Telematics, and Special Topics in Telematics, Computational Biology, and Artificial Intelligence. Some of these subjects cover a variety of topics fundamental to HPC, such as network management and system architecture, while others rely on HPC as a fundamental tool to achieve their educational purposes.
+
+Talking about graduate programs, the university has a master's program in IT, where students learn how to develop networks for high-performance systems. It also offers different subjects such as Architectural Thinking for IT solutions, Cloud Computing, and Data-Intensive Systems. Additionally, there is a master’s degree in Data Science, whose emphasis is placed on deepening the topic of computing large amounts of information through to the use of HPC.
+
+\section{Do we have an HPC cluster in our educational institution to practice the benchmarks?}
+
+Yes. EAFIT is home to two different clusters; Apolo and Cronos, both of which are used for educational purposes and are open to the research body of the University, including professors and students. The Apolo Scientific Computing Center has kindly let us use some of their nodes to test HPC tools and applications (xCAT, Ansible, HPL, QuEST, PRESTO), and its directors have also offered some nodes for us to train and prepare for ISC24 and develop some expertise.
+
+\section{Team Captain Information}
+Our team captain is Juan Manuel Gomez.
+\end{document}

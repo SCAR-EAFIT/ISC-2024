@@ -7,6 +7,10 @@
 \usepackage{hyperref}
 \usepackage{titling}
 \usepackage[dvipsnames]{xcolor}
+\usepackage{array}
+\usepackage{colortbl}
+
+
 
 
 
@@ -17,7 +21,21 @@
 \textcolor{bluePoli}{\textbf{#1}} \\ #2 \\ \textit{#3} \\
 }
 
-\newcommand{\groupname}{EAFIT University \\ Apolo Scientific Computing Center \\ Medellín, Colombia \bigskip\bigskip \\ \textbf{Proposal for ISC24 Virtual Competition}}
+
+
+\newcommand{\groupname}{
+\begin{tabular}{c}
+EAFIT University \\ Medellín, Colombia
+\end{tabular}
+\vspace{}
+\vline{}
+\begin{tabular}{c}
+Apolo Scientific \\ Computing Center
+\end{tabular}
+\bigskip\bigskip \\ \textbf{Proposal for ISC24 Virtual Competition}
+}
+\arrayrulecolor{bluePoli}
+
 
 
 \author{
@@ -33,11 +51,11 @@
 \end{tabular}
 \and
 \begin{tabular}{c}
-    \nameentry{Esteban Bernal}{CS Student}{ebernalc@eafit.edu.co}
+    \nameentry{Julian Estiven Valencia}{CS Student}{jevalencib@eafit.edu.co}
     \\
     \nameentry{Santiago Neusa}{CS Student}{sneusar@eafit.edu.co}
     \\
-    \nameentry{Sebastian Acosta}{CS Student}{sdacostam@eafit.edu.co}
+    \nameentry{Sebastian Jimenez}{Physics Engineering Student}{sjimenezh1@eafit.edu.co}
     \\
     \nameentry{Laura Sanchez}{Advisor/Apolo Tech Coordinator}{lsanchezc@eafit.edu.co}
     \\

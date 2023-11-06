@@ -1,0 +1,15 @@
+# Ignora archivos generados por LaTeX en ISC2024-Front
+ISC2024-Front/*.aux
+ISC2024-Front/*.log
+ISC2024-Front/*.fls
+ISC2024-Front/*.fdb_latexmk
+ISC2024-Front/*.out
+ISC2024-Front/*.synctex.gz
+
+# Ignora archivos generados por LaTeX en ISC2024-Proposal
+ISC2024-Proposal/*.aux
+ISC2024-Proposal/*.log
+ISC2024-Proposal/*.fls
+ISC2024-Proposal/*.fdb_latexmk
+ISC2024-Proposal/*.out
+ISC2024-Proposal/*.synctex.gz
